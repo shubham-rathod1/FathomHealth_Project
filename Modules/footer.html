@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <style>
+
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            a {
+                text-decoration: none;
+            }
+
+            #credit_bar div:nth-child(1) {
+                text-align: center;
+                flex-basis: 100%;
+                padding: 5% 0% 0% 0%;
+                color: #dfdbdb;
+
+            }
+
+            #footer  {
+
+                background-image: url('https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6edcb60f8bc32556bae915_footer-bg.png');
+                width: auto;
+                padding: 4% 1% 4% 4%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+
+
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            .fotr_col_1 > img {
+
+                width: 150px;
+                height: 25px;
+
+            }
+            .main_row div {
+
+                padding: 2% 2%;
+
+            }
+
+            .fotr_col_1 {
+                flex-basis: 46%;
+                text-align: left;
+    
+            }
+            .fotr_col_2 {
+                flex-basis: 9%;
+                margin: 0px;
+   
+            }
+            .fotr_col_3 {
+                flex-basis: 8%;
+                margin: 0px;
+   
+            }
+            .fotr_col_4 {
+                flex-basis: 11%;
+                margin: 0px;
+   
+            }
+            .fotr_col_5 {
+                flex-basis: 27%;
+                margin: 0px;
+    
+            }
+            .main_row div li {
+                list-style: none;
+                padding: 8px 0px;
+                color: #bdbaba;
+                font-size: 16px;
+            }
+            
+            .main_row h3 {
+                padding: 10px 0px;
+                color: #648294;
+                font-size: 18px;
+            }
+            .fotr_col_1 li {
+                display: inline-block;
+                background-color: #636A72;
+                width: 37px;
+                height: 20px;
+                margin: 0px 3px;
+                text-align: center;
+                border-radius: 99px;
+            }
+            .fotr_col_1 li img {
+                width: 16px;
+                height: 16px;
+                margin: 0px;
+                padding: 2px 2px;
+            }
+            #share_icon {
+                padding: 27px 0px ;
+            }
+            .fotr_col_1 h3 {
+                padding-top: 25px;
+            }
+            .fotr_col_1 li:hover {
+                color: #fff;
+            }
+            #footer div:nth-child(1) > div:nth-child(1)   li:hover {
+                background-color: #767d88;
+            }
+            #footer li:hover{
+                color:#fff
+            }
+            
+
+
+            @media only screen and (max-width: 980px) {
+
+                .main_row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                }
+
+                .fotr_col_1 {
+                    flex-basis: 100%;
+                    text-align: center;
+
+                }
+                .fotr_col_2 {
+                flex-basis: 12%;
+                margin: 0% 0% 0% 8%;
+   
+                }
+                .fotr_col_3 {
+                    flex-basis: 12%;
+                    margin: 0px;
+    
+                }
+                .fotr_col_4 {
+                    flex-basis: 16%;
+                    margin: 0px;
+    
+                }
+                .fotr_col_5 {
+                    flex-basis: 35%;
+                    margin: 0px;
+
+
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+
+                .main_row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                }
+
+                .fotr_col_1 {
+                    flex-basis: 100%;
+                    text-align: center;
+
+                }
+                .fotr_col_2 {
+                flex-basis: 40%;
+                margin: 0% 0% 0% 8%;
+   
+                }
+                .fotr_col_3 {
+                    flex-basis: 40%;
+                    margin: 0px;
+                    
+    
+                }
+                .fotr_col_4 {
+                    flex-basis: 40%;
+                    margin: 0% 0% 0% 8%;
+                    
+    
+                }
+                .fotr_col_5 {
+                    flex-basis: 40%;
+                    margin: 0px;
+
+
+                }
+
+            }
+
+
+
+        </style>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    </head>
+    <body>
+       
+        <div id="footer">
+            <div class=" main_row flex">
+
+                <div class="fotr_col_1">
+                    <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6edda6e64d7d84dcdae233_logo-white.png" alt="">
+                    <h3>Medical coding automation</h3>
+                    <ul id="share_icon">
+                        <li>
+                            <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7762ed7d8e63_twitter.svg" alt="twitter">
+                        </li>
+                        <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7768627d8e5d_linkedin.svg" alt="linkedin"></li>
+                        <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e802c87d802d6155e87a90f_angel%20list.svg" alt="angel.co"></li>
+                    </ul>
+                </div>
+                <div class="fotr_col_2">
+                    <h3>Technology</h3>
+                    <a href="#"><li>Solutions</li></a>
+                    <a href="#"><li>
+                        Security
+                    </li></a>
+                </div>
+                <div class="fotr_col_3">
+                    <h3>Company</h3>
+                    <a href=""><li>Team</li></a>
+                    <a href=""><li>Contact</li></a>
+                    <a href=""><li>Careers</li></a>
+            
+                </div>
+                <div class="fotr_col_4">
+                    <h3>Legal</h3>
+                    <a href=""><li>Privacy Policy</li></a>
+                    <a href=""><li>Cookies</li></a>
+                </div>
+                <div class="fotr_col_5">
+                    <h3>Resources</h3>
+                    <a href=""><li>Articles</li></a>
+                    <a href=""><li>RFP guide for medical coding</li></a>
+                    <a href=""><li>Medical coding automation checklist</li></a>
+                       
+                </div>
+
+            </div>
+
+            <div id="credit_bar" class="flex">
+                <div>
+                    <p>© Fathom, Inc. 2021</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+        </script>
+    </body>
+</html>

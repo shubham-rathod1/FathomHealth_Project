@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <style>
+
+            * {
+                margin: 0%;
+                padding: 0%;
+            }
+            
+
+            .flex {
+                display: flex;
+            }
+            #layout {
+                width: 100%;
+                height: auto;
+                background-color: #ffffff;
+                z-index: 99;
+                margin: 0%;
+            }
+
+            #layout div:nth-child(1) {
+
+                flex-basis: 40%;
+                height: 10vh;
+                text-align: left;
+
+            }
+            #layout div:nth-child(2) {
+                flex-basis: 60%;
+                /* border: 1px solid red; */
+                height: 10vh;
+                text-align: right;
+                margin-right: 7%;
+                
+            }
+            #layout div:nth-child(1) > img {
+                width: 135px;
+                height: 40px;
+                padding: 2.3% 10%;
+
+
+            }
+            #nav_menu {
+                display: inline-block;
+                list-style: none;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                top: 35%;
+                     
+            }
+            #nav_menu li {
+                font-size: 14px;
+                font-weight: 600;
+                display: inline-block;
+                padding: 0% 2%;
+
+            }
+
+            .hamburger_menu {
+                display: none;
+            }
+
+            @media only screen and (max-width: 1000px) {
+
+                #layout div:nth-child(2) > .hamburger_menu {
+                    display: block;
+                    position: relative;
+                    height: 100%;
+                    top: 28%;
+                    
+                    margin-right: -4.5%;
+                    
+                    
+                }
+
+                #nav_menu {
+                    display: none;
+                }
+
+                .hamburger_menu > img {
+                    width: 25px;
+                }
+                
+
+            }
+
+
+        </style>
+
+        <title></title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+
+    <body>
+        
+        <div id="layout" class="flex">
+
+            <div>
+                <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg" alt="">
+            </div>
+            <div>
+
+                <ul id="nav_menu">
+
+                    <a href="#"><li>SERVICES</li></a>
+                    <a href="#"><li>SECURITY</li></a>
+                    <a href="#"><li>TEAM</li></a>
+                    <a href="#"><li>CAREERS</li></a>
+                    <a href="#"><li>BLOG</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+
+
+                </ul>
+
+                <div class="hamburger_menu">
+
+                    <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7778b37d8e50_icon-menu.svg" alt="hamburger_menu">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <script>
+        </script>
+
+    </body>
+</html>
