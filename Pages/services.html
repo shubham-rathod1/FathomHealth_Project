@@ -15,6 +15,7 @@
             gap: 8%;
             margin-top: 6%;
             margin-left: 6%;
+            padding: 3% .5%;
         }
 
         #cont1 {
@@ -25,7 +26,8 @@
             gap: 8%;
             margin-top: 6%;
             background-color:rgb(239, 243, 245);
-            padding-left: 6%;
+            /* padding-left: 6%; */
+            padding: 3% .5%;
         }
 
       
@@ -38,6 +40,7 @@
             margin-top: 6%;
             margin-left: 6%;
             margin-bottom: 3%;
+            padding: 3% .5%;
         }
 
         img {
@@ -53,14 +56,14 @@
             color: lightgrey;
             font-size: 23px;
             font-weight: normal;
-            margin-top: 1%;
+            /* margin-top: 1%; */
             margin-left: .1%;
         }
 
         p {
             line-height: 26px;
-            padding-top: 1%;
         }
+        
 
         button {
             width: 180px;
@@ -71,8 +74,6 @@
             border: 2px solid blueviolet;
             background-color: white;
         }
-
-       
 
         h5 {
             font-size: 16px;
@@ -171,7 +172,10 @@
 
 
 
+       
 
+
+       
 
         @media only screen and (max-width: 600px) {
             h1 {
@@ -188,6 +192,9 @@
                 height: auto;
                 grid-template: "a" "b";
                 margin-bottom: 7%;
+            }
+            #cont1 > div:nth-of-type(2) {
+                margin-bottom: 10%;
             }
             #cont2 {
                 width: 90%;
@@ -210,11 +217,16 @@
                 height: auto;
                 grid-template: "a" "b" "c";
             }
-            /* #bottom > button {
-                width: 90%;
-                height: auto;
-            }  */
-        }    
+            #bottom > button {
+               margin-left: 35%;
+            } 
+        }  
+
+
+
+
+       
+  
 
     </style>
 </head>
