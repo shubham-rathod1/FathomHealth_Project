@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>teams</title>
+    <style type="text/css">
+       .meet_the_team{
+           font-size: 28px;
+       }
+       .text_align{
+           text-align: center;
+       }
+       .center{
+           margin: auto;
+       }
+       /*cont for team faces*/
+       #team_cont{
+           display: grid;
+           width: 90%;
+           border: 1px solid none;
+           height: 100%;
+           margin-top: 8%;
+           grid-template-columns: auto auto auto auto;
+           grid-template: "face_1 face_2 face_3 face_4"
+           "face_5 face_6 face_7 face_8"
+           "face_9 face_10 face_11 face_12"
+           "face_13 face_14 face_15 face_16"
+           "face_17 face_18 face_19 face_20"
+           "face_21 face_22 face_23 face_24"
+           "face_25 face_26 face_27 face_28";
+           gap: 40px;
+           font-family: sans-serif;
+       }
+       /* face div specs*/
+       .team_face_div{
+           /* width: 70%; */
+           height: 89%;
+           margin: 14%;
+           border: 1px solid none;
+       }
+       #face_1{
+           grid-area: face_1;
+       }
+       #face_2{
+           grid-area: face_2;
+       }
+       #face_3{
+           grid-area: face_3;
+       }
+       #face_4{
+           grid-area: face_4;
+       }
+       #face_5{
+           grid-area: face_5;
+       }
+       #face_6{
+           grid-area: face_6;
+       }
+       #face_7{
+           grid-area: face_7;
+       }
+       #face_8{
+           grid-area: face_8;
+       }
+       #face_1{
+           grid-area: face_1;
+       }
+       #face_9{
+           grid-area: face_9;
+       }
+       #face_10{
+           grid-area: face_10;
+       }
+       #face_11{
+           grid-area: face_11;
+       }
+       #face_12{
+           grid-area: face_12;
+       }
+       #face_13{
+           grid-area: face_13;
+       }
+       #face_14{
+           grid-area: face_14;
+       }
+       #face_15{
+           grid-area: face_15;
+       }
+       #face_16{
+           grid-area: face_16;
+       }
+       #face_17{
+           grid-area: face_17;
+       }
+       #face_18{
+           grid-area: face_18;
+       }
+       #face_19{
+           grid-area: face_19;
+       }
+       #face_20{
+           grid-area: face_20;
+       }
+       #face_21{
+           grid-area: face_21;
+       }
+       #face_22{
+           grid-area: face_22;
+       }
+       #face_23{
+           grid-area: face_23;
+       }
+       #face_24{
+           grid-area: face_24;
+       }
+       #face_25{
+           grid-area: face_25;
+       }
+       #face_26{
+           grid-area: face_26;
+       }
+       #face_27{
+           grid-area: face_27;
+       }
+       #face_28{
+           grid-area: face_28;
+       }
+       @media only screen and (max-width: 800px){
+           #team_cont{
+               grid-template:"face_1 face_2"
+            "face_3 face_4"
+           "face_5 face_6"
+            "face_7 face_8"
+           "face_9 face_10"
+            "face_11 face_12"
+           "face_13 face_14"
+            "face_15 face_16"
+           "face_17 face_18"
+            "face_19 face_20"
+           "face_21 face_22"
+           "face_23 face_24"
+           "face_25 face_26"
+           "face_27 face_28" ;
+           }
+       }
+       .face_image{
+           width: 100%;
+           height: 67%;
+       }
+       .team_face_div h2,p{
+           text-align: center;
+       }
+       .team_face_div p{
+           color: gray;
+       }
+       #grey_div{
+           width: 100%;
+           height: 98%;
+           border: 1px solid white;
+           background-color: rgb(238, 238, 253);
+           margin-top: 30px;
+       }
+       #fortunate_div{
+           width: 90%;
+           height: 12%;
+           border: 1px solid none;
+           margin-top: 100px;
+           text-align: center;
+           color: gray;
+           font-size: 30px;
+       }
+       #last_div{
+           display: grid;
+           width: 88%;
+           height: 60%;
+           border: 1px solid none;
+           grid-template: "tras_div gv_div fund_div";
+           grid-template-columns: auto auto auto;
+           gap: 30px;
+           margin-top: 45px;
+           font-family: sans-serif;
+           font-weight: 600;
+           margin-bottom: 80px;
+       }
+       #last_div > div{
+           /* width: 30%; */
+           height: 98%;
+           border: 1px solid none;
+       }
+       #tras_div{
+           grid-area: tras_div;
+       }
+       #gv_div{
+           grid-area: gv_div;
+       }
+       #fund_div{
+           grid-area: fund_div;
+       }
+       .face_image2{
+           width: 82%;
+           height: 45%;
+           margin-left: 8%;
+       }
+       #gv{
+           width:48%;
+           margin-left: 30%;
+       }
+       #fund{
+           width: 70%;
+           margin-left: 15%;
+       }
+       #tras{
+           width: 79%;
+       }
+       #last_div p{
+           margin-top: 35px;
+       }
+       #final_div{
+           width: 100%;
+           height: 55%;
+           border: 1px solid none;
+           margin-top: 15px;
+           display: grid;
+           grid-template-columns: 70% 25%;
+           grid-template: "a b";
+       }
+       #final_div >div{
+           height: 90%;
+           border: 1px solid none;
+           margin: 20px;
+       }
+       #final_div > div:nth-child(1){
+           grid-area: a;
+       }
+       #final_div > div:nth-child(2){
+           grid-area: b;
+       }
+       #explore_btn{
+           width: 68%;
+           height: 60px;
+           border-radius: 40px;
+           background-color: #9a76d0;
+           border-color: #9a76d0;
+           letter-spacing: 2px;
+           text-transform: uppercase;
+           color: white;
+           font-weight: 600;
+           padding: 14px 28px;
+           margin-top: 95px;
+           margin-left: 60px;
+       }
+       #look_div h1{
+           font-size: 40px;
+           font-family: sans-serif;
+           color: #293240;
+       }
+       #look_div h3{
+           font-size: 30px;
+           font-family: sans-serif;
+           letter-spacing: 1px;
+           font-weight: lighter;
+           color: gray;
+       }
+       .text_space1{
+           margin-top: 90px;
+           margin-left: 15px;
+       }
+       .text_space2{
+           margin-left: 15px;
+       }
+       @media only screen and (max-width: 600px){
+           #last_div{
+               grid-template: "tras_div"
+               "gv_div"
+               "fund_div";
+           }
+       }
+       @media only screen and (max-width: 600px){
+           #final_div{
+               grid-template: "a"
+               "b";
+           }
+       }
+       .btnhover:hover {opacity: .7}
+       
+    </style>
+</head>
+<body>
+      <div class="meet_the_team  text_align">
+          <h1>Meet the team</h1>
+      </div> 
+      
+      <div id="team_cont" class="center">
+          <div class="team_face_div"id="face_1">
+              <img  class="face_image"  src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589ea8a97133905fdafa0_andrew.svg" alt=""/>
+              <h2>Andrew</h2>
+              <p>Cofounder</p>
+          </div>
+          <div class="team_face_div" id="face_2">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589ea52b076432f124bcc_chris.svg" alt=""/>
+              <h2>Chris</h2>
+              <p>Cofounder</p>
+          </div>
+          <div class="team_face_div" id="face_3">
+              <img  class="face_image"src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589ebfc81976ad2aeb379_krishna.svg" alt=""/>
+              <h2>Krishna</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div" id="face_4">
+              <img class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589ecc718425534dde858_pawel.svg" alt=""/>
+              <h2>Pawel</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_5">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589eb516e7a74b950826d_monica.svg" alt=""/>
+              <h2>Monica</h2>
+              <p>Recruiting</p>
+          </div>
+          <div class="team_face_div" id="face_6">
+              <img class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589eaf0055b59d7ab2c0f_erick.svg" alt=""/>
+              <h2>Erick</h2>
+              <p>Buiseness Operations</p>
+          </div>
+          <div class="team_face_div"id="face_7">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589ec05cae126d3d5c9d3_stephane.svg" alt=""/>
+              <h2>Stephane</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_8">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589ea25aced6cdd220040_jack.svg" alt=""/>
+              <h2>Jack</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_9">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c0ff0055b30d3ab383f_MAX.svg" alt=""/>
+              <h2>Max</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_10">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c0f776a81404b05a310_ANDREI.svg" alt=""/>
+              <h2>Andrei</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_11">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c10fc819701fcaeb8d7_JAKUB%20T.svg" alt=""/>
+              <h2>Jakub</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_12">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c10fc81973236aeb8d5_PARTH%20D.svg" alt=""/>
+              <h2>Parth</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_13">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c10c71842b01eddee52_AMIT.svg" alt=""/>
+              <h2>Amit</h2>
+              <p>Buiseness Development</p>
+          </div>
+          <div class="team_face_div"id="face_14">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589ea05cae1e6d7d5c9bd_kevin.svg" alt=""/>
+              <h2>Kevin</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_15">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c10248e597de20a15d7_DYLAN%20J.svg" alt=""/>
+              <h2>Dyalan</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_16">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589eafa63bc5af681e4e4_david.svg" alt=""/>
+              <h2>David</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_17">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c0f05cae1a1c2d5d0d8_BRANKO.svg" alt=""/>
+              <h2>Branko</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div" id="face_18">
+              <img  class="face_image"src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c1052b0767f801252f7_KIM%20S.svg" alt=""/>
+              <h2>Kim</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"  id="face_19">
+              <img class="face_image"src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589eb834740bfc140aa16_neo.svg" alt=""/>
+              <h2>Neo</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_20">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c108a9713756afdb760_RAGIB%20M.svg" alt=""/>
+              <h2>Rajib</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_21">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c10f0055b8ba4ab3840_MATHEW.svg" alt=""/>
+              <h2>Matthew</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_22">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8589eb248e5941b10a0c61_millin.svg" alt=""/>
+              <h2>Millin</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_23">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e858c10c71842730fddee53_DAVID%20W.svg" alt=""/>
+              <h2>David</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div" id="face_24">
+              <img  class="face_image"src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5eb87c8e620703b6d172015a_tommek.svg" alt=""/>
+              <h2>Tomek</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"  id="face_25">
+              <img class="face_image"src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5eb87c8d79f8864e4c48f2cd_michael.svg" alt=""/>
+              <h2>Micheal</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_26">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5eb87c8c042e747702149818_aditya.svg" alt=""/>
+              <h2>Aditya</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_27">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5eb87c8d8b6303666c45abf9_kuba.svg" alt=""/>
+              <h2>Kuba</h2>
+              <p>Technology</p>
+          </div>
+          <div class="team_face_div"id="face_28">
+              <img  class="face_image" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5eb87c8c042e747754149819_scott.svg" alt=""/>
+              <h2>Scott</h2>
+              <p>Technology</p>
+          </div>
+      </div>
+      <br/><br/>
+      <div id="grey_div">
+            <div id="fortunate_div" class="center">Fortunate to be backed by world-class investors</div>
+            <div id="last_div" class="center">
+                <div id="tras_div">
+                    <img id="tras" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea20b35249c08cdb3393fef_tarsadia.svg" alt="" >
+                    <p>TRASDIA</p>
+                </div>
+                <div id="gv_div">
+                    <img id="gv" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea20cc4a9bb6c61ceb12d53_gv.svg" alt="">
+                    <p>FORMERLY GOOGLE VENTURES</p>
+                </div>
+                <div id="fund_div">
+                    <img id="fund" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea211634ec0809b10070bec_ff.svg" alt="">
+                    <p>FOUNDERS FUND</p>
+                </div>
+            </div>
+      </div>
+      <div id="final_div">
+          <div id="look_div">
+              <h1 class="text_space1" >Looking to make an impact?</h1>
+              <h3 class="text_space2" >Check out our open roles in engineering and business.</h3>
+          </div>
+          <div>
+              <button id="explore_btn" class="btnhover">Explore Careers</button>
+          </div>
+      </div>
+      <script>
+           var xplor_btn = document.getElementById('explore_btn')
+           function smfunction(){
+               
+           }
+           xplor_btn.addEventListener('mouseover',smfunction)
+      </script>
+
+</body>
+</html>
