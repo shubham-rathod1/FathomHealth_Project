@@ -54,7 +54,7 @@
 
         #services-cont {
             display: grid;
-            grid-template: "head head head"
+            grid-template: "item0 item0 item0"
                 "item1 item2 item3";
             width: 80%;
             margin: auto;
@@ -65,9 +65,12 @@
         }
 
         .head {
-            grid-area: head;
             margin-top: -2.8%;
             width: 100%;
+        }
+
+        #item0 {
+            grid-area: item0;
         }
 
         #item1 {
@@ -141,19 +144,23 @@
             background-color: rgb(243, 245, 251);
             width: 80%;
             margin: auto;
-
+            padding: 50px 0px;
+            padding-bottom: 80px;
         }
 
         #heading-cont {
-            width: 80%;
+            /* width: 80%; */
             margin: auto;
+            grid-area: heading;
+            text-align: center;
         }
 
         #numbers-grid-cont {
             width: 90%;
             margin: auto;
             display: grid;
-            grid-template: "num1 num2 num3";
+            grid-template: "heading heading heading"
+                "num1 num2 num3";
             /* border: 1px solid red; */
             margin-top: -1.8%;
         }
@@ -183,7 +190,7 @@
             font-size: 14px;
             font-weight: 700;
             letter-spacing: 1px;
-            margin-top: -28%;
+            margin-top: -104.75px;
         }
 
         .subheader {
@@ -240,7 +247,8 @@
             background-color: rgb(243, 245, 251);
             width: 90%;
             margin: auto;
-            padding-bottom: 60px;
+            padding-bottom: 120px;
+            padding-top: 40px;
         }
 
         #img-cont-grid {
@@ -256,18 +264,21 @@
             grid-area: img1;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-bottom: 40px;
         }
 
         #img2 {
             grid-area: img2;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-bottom: 40px;
         }
 
         #img3 {
             grid-area: img3;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-bottom: 40px;
         }
 
         .blog-img {
@@ -340,13 +351,118 @@
             background-color: #9a76d0;
         }
 
-        @media only screen and (max-width: 600px) {}
+        @media only screen and (max-width: 600px) {
+            #services-cont {
+                grid-template: "item0"
+                    "item1"
+                    "item2"
+                    "item3";
+                width: 100%;
+                gap: 2.9%;
+            }
+
+            .img-cont {
+                width: 23%;
+                height: 80px;
+                margin: auto;
+            }
+
+            .img-cont img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .button-cont {
+                width: 100%;
+                margin-top: 20%;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            #numbers-cont {
+                width: 100%;
+            }
+
+            #numbers-grid-cont {
+                grid-template: "heading"
+                    "num1"
+                    "num2"
+                    "num3";
+                width: 100%;
+                gap: 3%;
+            }
+
+            #benifits-cont {
+                grid-template: "head2"
+                    "b1"
+                    "b2"
+                    "b3"
+                    "b4"
+                    "b5"
+                    "b6";
+                gap: 2.5%;
+                margin-top: -50px;
+            }
+
+            #b4,
+            #b5,
+            #b6 {
+                margin-top: -5px;
+            }
+
+
+            #bt2 {
+                margin-top: 190px;
+            }
+
+            #bottom-cont {
+                width: 100%;
+            }
+
+            #bot-heading-cont {
+                width: 80%;
+                margin: auto;
+            }
+
+            #bot-heading-cont h6 {
+                margin-top: -45px;
+            }
+
+            #img-cont-grid {
+                grid-template: "img1"
+                    "img2"
+                    "img3";
+            }
+
+            #last-grid {
+                grid-template: "lhead"
+                    "but1"
+                    "but2";
+            }
+
+            #but1 {
+                margin-top: -20px;
+            }
+
+            #but2 {
+                margin-top: 40px;
+            }
+
+            .last-button {
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+
+            @media only screen and (max-width: 768px) {}
+        }
     </style>
 </head>
 
 <body>
     <div id="nvidia-cont">
-        <div>
+        <div id="nvidia-div">
             <p id="nvidia-text" class="center">Read NVDIA's spotlight on Fathom: The Cure of the Common Code</p>
         </div>
     </div>
@@ -357,7 +473,7 @@
     <!-- services container(grid) -->
 
     <div id="services-cont">
-        <div class="head">
+        <div class="head" id="item0">
             <h3 class="heading center">Coding services tailored to your workflow</h3>
         </div>
         <div id="item1">
@@ -406,29 +522,30 @@
 
     <div id="numbers-cont">
         <div style="height: 10px;"></div>
-        <div id="heading-cont">
+        <!-- <div id="heading-cont">
             <h3 class="centre heading">Fathom powers coding operations across</h3>
-        </div>
+        </div> -->
         <div id="numbers-grid-cont">
+            <div id="heading-cont">
+                <h3 class="centre heading">Fathom powers coding operations across</h3>
+            </div>
             <div id="num1">
                 <h4 class="num-heading center">2000+</h4>
-                <!-- <p class="small-heading center">PROVIDER SITES</p> -->
-                <div class="small-heading center marginAdj" style="margin-top: -30.5%;">PROVIDER SITES</div>
+                <div class="small-heading center">PROVIDER SITES</div>
             </div>
             <div id="num2">
                 <h4 class="num-heading center">200M+</h4>
-                <!-- <p class="small-heading center">PATIENTS</p> -->
-                <div class="small-heading center">PROVIDER SITES</div>
+                <div class="small-heading center">PATIENTS</div>
             </div>
             <div id="num3">
                 <h4 class="num-heading center">100M+</h4>
-                <!-- <p class="small-heading center">ANNUAL ENCOUNTERS</p> -->
-                <div class="small-heading center">PROVIDER SITES</div>
+                <div class="small-heading center">ANNUAL ENCOUNTERS</div>
             </div>
         </div>
     </div>
     <div style="height: 50px;"></div>
     <h6 class="center" id="services">Benifits</h6>
+
     <!-- benifits cont -->
     <div id="benifits-cont">
         <div class="head" id="head2">
@@ -496,9 +613,9 @@
             </div>
         </div>
     </div>
-
+    <div style="height: 45px;"></div>
     <!-- button -->
-    <div class="button-cont" style="margin-top: 8%;">
+    <div id="bt2" class="button-cont">
         <button class="button" onclick="location.href='services.html'" type="button">
             SCHEDULE A CALL
         </button>
@@ -507,7 +624,7 @@
     <!-- Bottom Container -->
     <div id="bottom-cont">
         <div style="height: 10px;"></div>
-        <div class="head">
+        <div class="head" id="bot-heading-cont">
             <h3 class="heading center">Industry news and insights</h3>
             <h6 class="subheader center">Stay up to date with the latest from the Fathom team</h6>
         </div>
@@ -576,10 +693,35 @@
     </div>
 
     <script>
-        const mediaQuery = window.matchMedia('(max-width: 600px)');
-        if (mediaQuery.matches) {
+        const mobileView = window.matchMedia('(max-width: 600px)');
+        const mediumView = window.matchMedia('(min-width: 770px)');
 
+        function mobShow(e) {
+            if (e.matches) {
+                var cont = document.querySelector("#nvidia-text");
+                cont.parentNode.remove();
+                console.log("MobileView");
+            }
         }
+
+        function medShow(e) {
+            if (e.matches) {
+                var cont = document.querySelector("#nvidia-cont");
+                // if (cont.childNodes != null) {
+                //     cont.childNodes.remove();
+                // }
+                var div = document.createElement("div");
+                var p = document.createElement("p");
+                p.textContent = "Read NVDIA's spotlight on Fathom: The Cure of the Common Code";
+                p.setAttribute("class", "center");
+                p.setAttribute("id", "nvidia-text");
+                div.appendChild(p);
+                cont.appendChild(div);
+                console.log("LargeView")
+            }
+        }
+        mediumView.addListener(medShow);
+        mobileView.addListener(mobShow);
     </script>
 </body>
 
