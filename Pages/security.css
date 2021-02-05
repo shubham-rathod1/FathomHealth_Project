@@ -5,11 +5,11 @@
 
 /* header style  */
 
-/* * {
-    margin: 0%;
-    padding: 0%;
-} */
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 
 .flex {
 display: flex;
@@ -18,7 +18,7 @@ display: flex;
 width: 100%;
 height: auto;
 background-color: #ffffff;
-z-index: 99;
+z-index: 9999;
 margin: 0%;
 }
 
@@ -110,7 +110,7 @@ display: none;
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 96px 0px;
+    padding: 110px 0px;
 }
 #hero .container h1 {
     font-size: 68px;
@@ -149,11 +149,12 @@ display: none;
 
 .dots {
 
-    z-index: 1000;
-    position: absolute;
+    z-index: 2;
+    position: relative;
     display: block;
-    top: 295px;
+    top: -130px;
     width: 15%;
+    
     padding-left: 10px;
     padding-right: auto;
     height: 230px;
@@ -161,6 +162,10 @@ display: none;
     background-position: center;
     background-repeat: repeat-y;
     background-size: 140px;
+}
+
+.approach {
+    margin-top: -12%;
 }
 
 .approach > p {
