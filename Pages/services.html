@@ -6,44 +6,45 @@
     <title>Document</title>
     <style>
        
-        /* *{
-            margin: 0px;
-            padding: 0px;
-        } */
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        * #cont, #cont1, #cont2, #bottom, h1 {
+            font-family: sans-serif;
+        }
         #cont {
             display: grid;
-            width: 90%;
+            width: 100vw;
             grid-template: "a a b";
             margin: auto;
             gap: 8%;
             margin-top: 6%;
-            margin-left: 6%;
-            padding: 3% .5%;
+            padding:  5.5%;
         }
 
         #cont1 {
             display: grid;
-            width: 100%;
+            width: 100vw;
             grid-template: "a b b";
             margin: auto;
             gap: 8%;
             margin-top: 6%;
             background-color:rgb(239, 243, 245);
-            /* padding-left: 6%; */
-            padding: 1.5%;
+            padding: 5.5%;
         }
 
       
         #cont2 {
             display: grid;
-            width: 90%;
+            width: 100vw;
             grid-template: "a a b";
             margin: auto;
             gap: 8%;
             margin-top: 6%;
-            margin-left: 6%;
             margin-bottom: 3%;
-            padding: 3% .5%;
+            padding: 5.5%;
         }
 
         img {
@@ -57,7 +58,7 @@
         }
 
         h6 {
-            color: lightgrey;
+            color: grey;
             font-size: 23px;
             font-weight: normal;
             margin-left: .1%;
@@ -65,7 +66,7 @@
         }
 
         p {
-            line-height: 26px;
+            line-height: 24px;
             margin-top: -15px;
         }
         
@@ -83,12 +84,13 @@
         h5 {
             font-size: 16px;
             margin-top: 10px;
+            color: grey;
         }
 
 
 
         #bottom {
-            width: 100%;
+            width: 100vw;
             background-color:  rgb(239, 243, 245);
             padding-top: 6%;
             margin: auto;
@@ -105,7 +107,7 @@
             grid-template: "a b c";
             width: 100%;
             height: 300px;
-            margin-top: 3%;
+            margin-top: 10%;
         }
         .box1 > div {
             width: 65%;
@@ -124,6 +126,7 @@
         }
         .box1 > div > div:nth-of-type(2) >  p {
             font-size: 17px;
+            margin-top: 10px;
         }
         .box1 > div > div:nth-of-type(2) > h3 {
             color: black;
@@ -158,11 +161,28 @@
         }
         .box2 > div > div:nth-of-type(2) >  p {
             font-size: 17px;
+            margin-top: 10px;
         }
         .box2 > div > div:nth-of-type(2) > h3 {
             color: black;
             margin-top: 2%;
             font-weight: bold;
+        }
+
+        #bottom > h5, h3, p {
+            padding-top: 10px;
+        }
+
+        #bottom > h1 {
+            font-size: 47px;
+        }
+
+        #bottom > h3 {
+            font-size: 30px;
+        }
+
+        #bottom > h5, h3, p {
+            color: grey;
         }
 
         #bottom >  button {
@@ -179,6 +199,57 @@
 
 
        
+        @media only screen and (max-width: 990px) {
+            h1 {
+                width: 90%;
+            }
+            #cont {
+                width: 90%;
+                height: auto;
+                grid-template: "a" "b";
+                margin-bottom: 20%;
+            }
+            #cont1 {
+                width: 90%;
+                height: auto;
+                grid-template: "b" "a";
+                margin-bottom: 20%;
+            }
+            #cont1 > div:nth-of-type(2) {
+                margin-bottom: 10%;
+            }
+            #cont2 {
+                width: 90%;
+                height: auto;
+                grid-template: "a" "b";
+                margin-bottom: 20%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            button {
+                margin: auto;
+                margin-bottom: 8%;
+                width: 360px;
+            }
+            #bottom >.box1 {
+                width: 90%;
+                height: auto;
+                grid-template: "a b c";
+            }
+            #bottom >.box2 {
+                width: 90%;
+                height: auto;
+                grid-template: "a b c";
+            }
+            #bottom > button {
+               margin-left: 35%;
+               width: 360px;
+               
+ 
+            } 
+        }  
 
 
        
@@ -191,13 +262,13 @@
                 width: 90%;
                 height: auto;
                 grid-template: "a" "b";
-                margin-bottom: 7%;
+                margin-bottom: 20%;
             }
             #cont1 {
                 width: 90%;
                 height: auto;
-                grid-template: "a" "b";
-                margin-bottom: 7%;
+                grid-template: "b" "a";
+                margin-bottom: 20%;
             }
             #cont1 > div:nth-of-type(2) {
                 margin-bottom: 10%;
@@ -206,12 +277,12 @@
                 width: 90%;
                 height: auto;
                 grid-template: "a" "b";
-                margin-top: 8%;
-                margin-bottom: 8%;
+                margin-bottom: 20%;
             }
             button {
                 margin: auto;
                 margin-bottom: 8%;
+                width: 360px;
             }
             #bottom >.box1 {
                 width: 90%;
@@ -224,7 +295,8 @@
                 grid-template: "a" "b" "c";
             }
             #bottom > button {
-               margin-left: 35%;
+               margin-left: 15%;
+               width: 360px;
             } 
         }  
 
