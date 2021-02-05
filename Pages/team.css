@@ -1,5 +1,68 @@
 /* header style */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+#hero {
+    background-image: url('https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8115255836db2cd3bfd6b2_background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 96px 0px;
+}
+#hero .container h1 {
+    font-size: 68px;
+    line-height: 82px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 40px;
+    
+    /* text-align: center; */
+    
+}
 
+.container {
+    
+    z-index: 1;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-left: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+
+}
+
+.container div:nth-child(2) {
+                        /* why text align is not working here when given max width */
+    width: 50%;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 200;
+    color: #fff;   
+    padding-left: 25%;
+
+}
+
+.dots {
+
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    top: 420px;
+    width: 15%;
+    padding-left: 10px;
+    padding-right: auto;
+    height: 230px;
+    background-image: url('http://assets.website-files.com/5e6c01bb5212506d6c119069/5e80153f9d7551fe59c817f0_dots.svg');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: 140px;
+}
 .flex {
     display: flex;
 }
