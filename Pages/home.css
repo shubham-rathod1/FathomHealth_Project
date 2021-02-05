@@ -145,7 +145,7 @@
                 z-index: 1000;
                 position: absolute;
                 display: block;
-                top: 50%;
+                top: 70%;
                 width: 15%;
                 padding-left: 10px;
                 padding-right: auto;
@@ -154,6 +154,14 @@
                 background-position: center;
                 background-repeat: repeat-y;
                 background-size: 140px;
+            }
+
+            #hero-btn button{
+                background-color: white;
+                border-color: white;
+                color:#9a76d0;
+                width: 77%;
+                margin-top: -40px;
             }
 
 /* hero ends */
