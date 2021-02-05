@@ -7,6 +7,7 @@
     
 </head>
 <body>
+    
       <!-- header starts -->
       <div id="layout" class="flex">
 
@@ -44,6 +45,23 @@
     
 
       <!-- header ends -->
+      <div id="hero">
+
+        <div class="container center">
+            <div class="heading text_align">
+                <h1>On a mission to structure the world's healthcare data</h1>
+            </div>
+            <div>
+                <p>Fathom has brought together a world-class team of technologists, designers, and business people to fix one of the most broken parts of the healthcare system.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="dots">
+        <!-- <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e80153f9d7551fe59c817f0_dots.svg" alt=""> -->
+    </div>
+    
+    <script ></script>
       <div class="meet_the_team  text_align">
           <h1>Meet the team</h1>
       </div> 
@@ -283,6 +301,27 @@
               offset: 120,
               duration: 800
           });
+     </script>
+     <script>
+          // script for sticky header
+
+                        // When the user scrolls the page, execute myFunction
+                        window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("layout");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+} else {
+    header.classList.remove("sticky");
+}
+}
      </script>
 
 </body>

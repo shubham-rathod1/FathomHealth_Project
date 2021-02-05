@@ -4,311 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-       
-        body {
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        * #cont, #cont1, #cont2, #bottom, h1 {
-            font-family: sans-serif;
-        }
-        #cont {
-            display: grid;
-            width: 100vw;
-            grid-template: "a a b";
-            margin: auto;
-            gap: 8%;
-            margin-top: 6%;
-            padding:  5%;
-        }
-
-        #cont1 {
-            display: grid;
-            width: 100vw;
-            grid-template: "a b b";
-            margin: auto;
-            gap: 8%;
-            margin-top: 6%;
-            background-color:rgb(239, 243, 245);
-            padding: 5%;
-        }
-
-      
-        #cont2 {
-            display: grid;
-            width: 100vw;
-            grid-template: "a a b";
-            margin: auto;
-            gap: 8%;
-            margin-top: 6%;
-            margin-bottom: 3%;
-            padding: 5%;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        h2 {
-            font-size: 40px;
-            margin-top: -10px;
-        }
-
-        h6 {
-            color: grey;
-            font-size: 23px;
-            font-weight: normal;
-            margin-left: .1%;
-            margin-top: -10px;
-        }
-
-        p {
-            line-height: 24px;
-            margin-top: -15px;
-        }
-        
-
-        button {
-            width: 180px;
-            height: 50px;
-            border-radius: 30px;
-            margin-top: 6%;
-            color: blueviolet;
-            border: 2px solid blueviolet;
-            background-color: white;
-        }
-
-        h5 {
-            font-size: 16px;
-            margin-top: 10px;
-            color: grey;
-        }
-
-
-
-        #bottom {
-            width: 100vw;
-            background-color:  rgb(239, 243, 245);
-            padding-top: 6%;
-            margin: auto;
-        }
-
-        #bottom > h5, h1, h3 {
-            text-align: center;
-            margin: .3%;
-        }
-
-        #bottom >.box1 {
-            display: grid;
-            gap: 2%;
-            grid-template: "a b c";
-            width: 100%;
-            height: 300px;
-            margin-top: 10%;
-        }
-        .box1 > div {
-            width: 65%;
-            height: 300px;
-            margin: auto;
-        }
-        .box1 > div > div:nth-of-type(1) {
-            width: 100%;
-            height: 35%;
-            
-        }
-        .box1 > div > div:nth-of-type(2) {
-            width: 100%;
-            height: 58%;
-            text-align: center;
-        }
-        .box1 > div > div:nth-of-type(2) >  p {
-            font-size: 17px;
-            margin-top: 10px;
-        }
-        .box1 > div > div:nth-of-type(2) > h3 {
-            color: black;
-            margin-top: 2%;
-            font-weight: bold;
-        }
-
-
-
-        #bottom >.box2 {
-            display: grid;
-            gap: 2%;
-            grid-template: "a b c";
-            width: 100%;
-            height: 300px;
-            margin-top: 3%;
-        }
-        .box2 > div {
-            width: 65%;
-            height: 300px;
-            margin: auto;
-        }
-        .box2 > div > div:nth-of-type(1) {
-            width: 100%;
-            height: 35%;
-            
-        }
-        .box2 > div > div:nth-of-type(2) {
-            width: 100%;
-            height: 58%;
-            text-align: center;
-        }
-        .box2 > div > div:nth-of-type(2) >  p {
-            font-size: 17px;
-            margin-top: 10px;
-        }
-        .box2 > div > div:nth-of-type(2) > h3 {
-            color: black;
-            margin-top: 2%;
-            font-weight: bold;
-        }
-
-        #bottom > h5, h3, p {
-            padding-top: 10px;
-        }
-
-        #bottom > h1 {
-            font-size: 47px;
-        }
-
-        #bottom > h3 {
-            font-size: 30px;
-        }
-
-        #bottom > h5, h3, p {
-            color: grey;
-        }
-
-        #bottom >  button {
-            width: 180px;
-            height: 50px;
-            border-radius: 30px;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            color: blueviolet;
-            border: 2px solid blueviolet;
-            margin-left: 45%;
-        }
-
-
-
-       
-        @media only screen and (max-width: 990px) {
-            h1 {
-                width: 90%;
-            }
-            #cont {
-                width: 90%;
-                height: auto;
-                grid-template: "a" "b";
-                margin-bottom: 20%;
-            }
-            #cont1 {
-                width: 90%;
-                height: auto;
-                grid-template: "b" "a";
-                margin-bottom: 20%;
-            }
-            #cont1 > div:nth-of-type(2) {
-                margin-bottom: 10%;
-            }
-            #cont2 {
-                width: 90%;
-                height: auto;
-                grid-template: "a" "b";
-                margin-bottom: 20%;
-            }
-            img {
-                width: 100%;
-                height: 100%;
-            }
-            button {
-                margin: auto;
-                margin-bottom: 8%;
-                width: 360px;
-            }
-            #bottom >.box1 {
-                width: 90%;
-                height: auto;
-                grid-template: "a b c";
-            }
-            #bottom >.box2 {
-                width: 90%;
-                height: auto;
-                grid-template: "a b c";
-            }
-            #bottom > button {
-               margin-left: 35%;
-               width: 360px;
-               
- 
-            } 
-        }  
-
-
-       
-
-        @media only screen and (max-width: 600px) {
-            h1 {
-                width: 90%;
-            }
-            #cont {
-                width: 90%;
-                height: auto;
-                grid-template: "a" "b";
-                margin-bottom: 20%;
-            }
-            #cont1 {
-                width: 90%;
-                height: auto;
-                grid-template: "b" "a";
-                margin-bottom: 20%;
-            }
-            #cont1 > div:nth-of-type(2) {
-                margin-bottom: 10%;
-            }
-            #cont2 {
-                width: 90%;
-                height: auto;
-                grid-template: "a" "b";
-                margin-bottom: 20%;
-            }
-            button {
-                margin: auto;
-                margin-bottom: 8%;
-                width: 360px;
-            }
-            #bottom >.box1 {
-                width: 90%;
-                height: auto;
-                grid-template: "a" "b" "c";
-            }
-            #bottom >.box2 {
-                width: 90%;
-                height: auto;
-                grid-template: "a" "b" "c";
-            }
-            #bottom > button {
-               margin-left: 15%;
-               width: 360px;
-            } 
-        }  
-
-
-
-
-       
-  
-
-    </style>
+    <link rel="stylesheet" href="services.css" type = "text/css">
 </head>
 <body>
+
+    <div id="layout" class="flex">
+
+        <div>
+            <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg"
+                alt="">
+        </div>
+        <div id="options-cont">
+
+            <ul id="nav_menu">
+
+                <a href="services.html">
+                    <li>SERVICES</li>
+                </a>
+                <a href="security.html">
+                    <li>SECURITY</li>
+                </a>
+                <a href="team.html">
+                    <li>TEAM</li>
+                </a>
+                <a href="#">
+                    <li>CAREERS</li>
+                </a>
+                <a href="#">
+                    <li>BLOG</li>
+                </a>
+                <a href="#">
+                    <li>CONTACT</li>
+                </a>
+
+            </ul>
+
+            <div class="hamburger_menu">
+
+                <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7778b37d8e50_icon-menu.svg"
+                    alt="hamburger_menu">
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Header Ends -->
+
+     <!-- Hero Section -->
+     <div id="hero">
+
+        <div class="container center">
+            <div class="heading">
+                <h1>Security and compliance</h1>
+            </div>
+            <div>
+                <p>Your data is our business so we take every step to safeguard it. Automated controls ensure your data
+                    remains protected.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="dots">
+        <!-- <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e80153f9d7551fe59c817f0_dots.svg" alt=""> -->
+    </div>
+    <!-- Hero Ends -->
+
     <h1> Read NVIDIA's spotlight on Fathom: The Cure for the Common Code</h1>
     <div id="cont">
         <div>
@@ -424,6 +185,101 @@
 
         <button>REQUEST A CALL</button>
  </div>
+
+
+ <!-- Footer Starts here -->
+ <div id="footer">
+    <div class=" main_row flex">
+
+        <div class="fotr_col_1">
+            <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6edda6e64d7d84dcdae233_logo-white.png"
+                alt="">
+            <h3>Medical coding automation</h3>
+            <ul id="share_icon">
+                <li>
+                    <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7762ed7d8e63_twitter.svg"
+                        alt="twitter">
+                </li>
+                <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7768627d8e5d_linkedin.svg"
+                        alt="linkedin"></li>
+                <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e802c87d802d6155e87a90f_angel%20list.svg"
+                        alt="angel.co"></li>
+            </ul>
+        </div>
+        <div class="fotr_col_2">
+            <h3>Technology</h3>
+            <a href="#">
+                <li>Solutions</li>
+            </a>
+            <a href="#">
+                <li>
+                    Security
+                </li>
+            </a>
+        </div>
+        <div class="fotr_col_3">
+            <h3>Company</h3>
+            <a href="">
+                <li>Team</li>
+            </a>
+            <a href="">
+                <li>Contact</li>
+            </a>
+            <a href="">
+                <li>Careers</li>
+            </a>
+        </div>
+        <div class="fotr_col_4">
+            <h3>Legal</h3>
+            <a href="">
+                <li>Privacy Policy</li>
+            </a>
+            <a href="">
+                <li>Cookies</li>
+            </a>
+        </div>
+        <div class="fotr_col_5">
+            <h3>Resources</h3>
+            <a href="">
+                <li>Articles</li>
+            </a>
+            <a href="">
+                <li>RFP guide for medical coding</li>
+            </a>
+            <a href="">
+                <li>Medical coding automation checklist</li>
+            </a>
+        </div>
+    </div>
+    <div id="credit_bar" class="flex">
+        <div>
+            <p>© Fathom, Inc. 2021</p>
+        </div>
+    </div>
+</div>
+<!-- Fotter ends here -->
+
+
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function () { myFunction() };
+
+// Get the header
+var header = document.getElementById("layout");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
+
+</script>
 
 
 </body>
