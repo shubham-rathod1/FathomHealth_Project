@@ -1,305 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="team.css">
     <title>teams</title>
-    <style type="text/css">
-       .meet_the_team{
-           font-size: 28px;
-       }
-       .text_align{
-           text-align: center;
-       }
-       .center{
-           margin: auto;
-       }
-       /*cont for team faces*/
-       #team_cont{
-           display: grid;
-           width: 90%;
-           border: 1px solid none;
-           /* height: 100%; */
-           margin-top: 8%;
-           grid-template-columns: auto auto auto auto;
-           grid-template: "face_1 face_2 face_3 face_4"
-           "face_5 face_6 face_7 face_8"
-           "face_9 face_10 face_11 face_12"
-           "face_13 face_14 face_15 face_16"
-           "face_17 face_18 face_19 face_20"
-           "face_21 face_22 face_23 face_24"
-           "face_25 face_26 face_27 face_28";
-           gap: 40px;
-       }
-       /* face div specs*/
-       .team_face_div{
-           /* width: 70%; */
-           /* height: 89%; */
-           /* margin: 14%; */
-           /* border: 1px solid none; */
-           padding: 15%;
-       }
-       #face_1{
-           grid-area: face_1;
-       }
-       #face_2{
-           grid-area: face_2;
-       }
-       #face_3{
-           grid-area: face_3;
-       }
-       #face_4{
-           grid-area: face_4;
-       }
-       #face_5{
-           grid-area: face_5;
-       }
-       #face_6{
-           grid-area: face_6;
-       }
-       #face_7{
-           grid-area: face_7;
-       }
-       #face_8{
-           grid-area: face_8;
-       }
-       #face_1{
-           grid-area: face_1;
-       }
-       #face_9{
-           grid-area: face_9;
-       }
-       #face_10{
-           grid-area: face_10;
-       }
-       #face_11{
-           grid-area: face_11;
-       }
-       #face_12{
-           grid-area: face_12;
-       }
-       #face_13{
-           grid-area: face_13;
-       }
-       #face_14{
-           grid-area: face_14;
-       }
-       #face_15{
-           grid-area: face_15;
-       }
-       #face_16{
-           grid-area: face_16;
-       }
-       #face_17{
-           grid-area: face_17;
-       }
-       #face_18{
-           grid-area: face_18;
-       }
-       #face_19{
-           grid-area: face_19;
-       }
-       #face_20{
-           grid-area: face_20;
-       }
-       #face_21{
-           grid-area: face_21;
-       }
-       #face_22{
-           grid-area: face_22;
-       }
-       #face_23{
-           grid-area: face_23;
-       }
-       #face_24{
-           grid-area: face_24;
-       }
-       #face_25{
-           grid-area: face_25;
-       }
-       #face_26{
-           grid-area: face_26;
-       }
-       #face_27{
-           grid-area: face_27;
-       }
-       #face_28{
-           grid-area: face_28;
-       }
-       @media only screen and (max-width: 700px){
-           #team_cont{
-               grid-template:"face_1 face_2"
-            "face_3 face_4"
-           "face_5 face_6"
-            "face_7 face_8"
-           "face_9 face_10"
-            "face_11 face_12"
-           "face_13 face_14"
-            "face_15 face_16"
-           "face_17 face_18"
-            "face_19 face_20"
-           "face_21 face_22"
-           "face_23 face_24"
-           "face_25 face_26"
-           "face_27 face_28" ;
-           }
-           .team_face_div{
-           padding: 3%;
-          }
-       }
-       .face_image{
-           width: 100%;
-           /* height: 67%; */
-       }
-       .team_face_div h2,p{
-           text-align: center;
-       }
-       .team_face_div p{
-           color: gray;
-       }
-       #grey_div{
-           width: 100%;
-           height: 98%;
-           border: 1px solid white;
-           background-color: rgb(238, 238, 253);
-           margin-top: 30px;
-       }
-       #fortunate_div{
-           width: 90%;
-           height: 12%;
-           border: 1px solid none;
-           margin-top: 100px;
-           text-align: center;
-           color: gray;
-           font-size: 30px;
-       }
-       #last_div{
-           display: grid;
-           width: 88%;
-           height: 60%;
-           border: 1px solid none;
-           grid-template: "tras_div gv_div fund_div";
-           grid-template-columns: auto auto auto;
-           gap: 30px;
-           margin-top: 45px;
-           font-family: sans-serif;
-           font-weight: 600;
-           margin-bottom: 80px;
-       }
-       #last_div > div{
-           /* width: 30%; */
-           height: 98%;
-           border: 1px solid none;
-       }
-       #tras_div{
-           grid-area: tras_div;
-       }
-       #gv_div{
-           grid-area: gv_div;
-       }
-       #fund_div{
-           grid-area: fund_div;
-       }
-       .face_image2{
-           width: 82%;
-           height: 45%;
-           margin-left: 8%;
-       }
-       #gv{
-           width:48%;
-           margin-left: 30%;
-       }
-       #fund{
-           width: 70%;
-           margin-left: 15%;
-       }
-       #tras{
-           width: 79%;
-       }
-       #last_div p{
-           margin-top: 35px;
-       }
-       #final_div{
-           width: 100%;
-           height: 55%;
-           border: 1px solid none;
-           margin-top: 15px;
-           display: grid;
-           grid-template-columns: 70% 25%;
-           grid-template: "a b";
-       }
-       #final_div >div{
-           height: 90%;
-           border: 1px solid none;
-           margin: 20px;
-       }
-       #final_div > div:nth-child(1){
-           grid-area: a;
-       }
-       #final_div > div:nth-child(2){
-           grid-area: b;
-       }
-       #explore_btn{
-           /* width: 68%; */
-           width: 240px; /* button resposiveness*/
-           height: 60px;
-           border-radius: 40px;
-           background-color: #9a76d0;
-           border-color: #9a76d0;
-           letter-spacing: 2px;
-           text-transform: uppercase;
-           color: white;
-           font-weight: 600;
-           padding: 12px 20px;
-           margin-top: 95px;
-           margin-left: 60px;
-       }
-       #look_div h1{
-           font-size: 40px;
-           font-family: sans-serif;
-           color: #293240;
-       }
-       #look_div h3{
-           font-size: 30px;
-           font-family: sans-serif;
-           letter-spacing: 1px;
-           font-weight: lighter;
-           color: gray;
-       }
-       .text_space1{
-           margin-top: 90px;
-           margin-left: 15px;
-       }
-       .text_space2{
-           margin-left: 15px;
-       }
-       @media only screen and (max-width: 780px){
-           #last_div{
-               grid-template: "tras_div"
-               "gv_div"
-               "fund_div";
-           }
-           /* gv image responsiveness */
-           #gv{
-               width: 20%;
-               margin-left: 40%;
-           }
-       }
-       /* tab resposiveness for final_div*/
-       @media only screen and (max-width: 990px){
-           #final_div{
-               grid-template: "a"
-               "b";
-           }
-           #explore_btn{
-               margin-top: 40px;
-               /* margin-left: 260px; */
-               margin-left: 35%;
-           }
-       }
-       .btnhover:hover {opacity: .7}
-       
-    </style>
+    
 </head>
 <body>
+      <!-- header starts -->
+      <div id="layout" class="flex">
+
+        <div>
+            <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg" alt="">
+        </div>
+        <div id="option_cont">
+
+            <ul id="nav_menu">
+
+                <a href="#"><li>SERVICES</li></a>
+                <a href="#"><li>SECURITY</li></a>
+                <a href="#"><li>TEAM</li></a>
+                <a href="#"><li>CAREERS</li></a>
+                <a href="#"><li>BLOG</li></a>
+                <a href="#"><li>CONTACT</li></a>
+
+
+            </ul>
+
+            <div class="hamburger_menu">
+
+                <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7778b37d8e50_icon-menu.svg" alt="hamburger_menu">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+    </script>
+    
+
+      <!-- header ends -->
       <div class="meet_the_team  text_align">
           <h1>Meet the team</h1>
       </div> 
@@ -451,16 +195,16 @@
             <div id="fortunate_div" class="center">Fortunate to be backed by world-class investors</div>
             <div id="last_div" class="center">
                 <div id="tras_div">
-                    <img id="tras" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea20b35249c08cdb3393fef_tarsadia.svg" alt="" >
+                    <img  data-aos="fade-right" id="tras" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea20b35249c08cdb3393fef_tarsadia.svg" alt="" >
                     <p>TRASDIA</p>
                 </div>
                 <div id="gv_div">
-                    <img id="gv" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea20cc4a9bb6c61ceb12d53_gv.svg" alt="">
-                    <p>FORMERLY GOOGLE VENTURES</p>
+                    <img data-aos="fade-right" id="gv" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea20cc4a9bb6c61ceb12d53_gv.svg" alt="">
+                    <p >FORMERLY GOOGLE VENTURES</p>
                 </div>
                 <div id="fund_div">
-                    <img id="fund" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea211634ec0809b10070bec_ff.svg" alt="">
-                    <p>FOUNDERS FUND</p>
+                    <img data-aos="fade-right" id="fund" class="face_image2" src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ea211634ec0809b10070bec_ff.svg" alt="">
+                    <p >FOUNDERS FUND</p>
                 </div>
             </div>
       </div>
@@ -473,6 +217,59 @@
               <button id="explore_btn" class="btnhover">Explore Careers</button>
           </div>
       </div>
+      <div id="footer">
+        <div class=" main_row flex">
+
+            <div class="fotr_col_1">
+                <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6edda6e64d7d84dcdae233_logo-white.png" alt="">
+                <h3>Medical coding automation</h3>
+                <ul id="share_icon">
+                    <li>
+                        <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7762ed7d8e63_twitter.svg" alt="twitter">
+                    </li>
+                    <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7768627d8e5d_linkedin.svg" alt="linkedin"></li>
+                    <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e802c87d802d6155e87a90f_angel%20list.svg" alt="angel.co"></li>
+                </ul>
+            </div>
+            <div class="fotr_col_2">
+                <h3>Technology</h3>
+                <a href="#"><li>Solutions</li></a>
+                <a href="#"><li>
+                    Security
+                </li></a>
+            </div>
+            <div class="fotr_col_3">
+                <h3>Company</h3>
+                <a href=""><li>Team</li></a>
+                <a href=""><li>Contact</li></a>
+                <a href=""><li>Careers</li></a>
+        
+            </div>
+            <div class="fotr_col_4">
+                <h3>Legal</h3>
+                <a href=""><li>Privacy Policy</li></a>
+                <a href=""><li>Cookies</li></a>
+            </div>
+            <div class="fotr_col_5">
+                <h3>Resources</h3>
+                <a href=""><li>Articles</li></a>
+                <a href=""><li>RFP guide for medical coding</li></a>
+                <a href=""><li>Medical coding automation checklist</li></a>
+                   
+            </div>
+
+        </div>
+
+        <div id="credit_bar" class="flex">
+            <div>
+                <p>© Fathom, Inc. 2021</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    </script>
       <script>
            var xplor_btn = document.getElementById('explore_btn')
            function smfunction(){
@@ -480,6 +277,13 @@
            }
            xplor_btn.addEventListener('mouseover',smfunction)
       </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init({
+              offset: 120,
+              duration: 800
+          });
+     </script>
 
 </body>
 </html>
