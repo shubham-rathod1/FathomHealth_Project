@@ -143,7 +143,7 @@
            }
            .team_face_div{
            padding: 3%;
-       }
+          }
        }
        .face_image{
            width: 100%;
@@ -238,7 +238,8 @@
            grid-area: b;
        }
        #explore_btn{
-           width: 68%;
+           /* width: 68%; */
+           width: 240px; /* button resposiveness*/
            height: 60px;
            border-radius: 40px;
            background-color: #9a76d0;
@@ -247,7 +248,7 @@
            text-transform: uppercase;
            color: white;
            font-weight: 600;
-           padding: 14px 28px;
+           padding: 12px 20px;
            margin-top: 95px;
            margin-left: 60px;
        }
@@ -270,17 +271,28 @@
        .text_space2{
            margin-left: 15px;
        }
-       @media only screen and (max-width: 600px){
+       @media only screen and (max-width: 780px){
            #last_div{
                grid-template: "tras_div"
                "gv_div"
                "fund_div";
            }
+           /* gv image responsiveness */
+           #gv{
+               width: 20%;
+               margin-left: 40%;
+           }
        }
-       @media only screen and (max-width: 600px){
+       /* tab resposiveness for final_div*/
+       @media only screen and (max-width: 990px){
            #final_div{
                grid-template: "a"
                "b";
+           }
+           #explore_btn{
+               margin-top: 40px;
+               /* margin-left: 260px; */
+               margin-left: 35%;
            }
        }
        .btnhover:hover {opacity: .7}
