@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        * #cont, #cont1, #cont2, #bottom, h1 {
+            font-family: sans-serif;
+        }
+        #cont {
+            display: grid;
+            width: 100vw;
+            grid-template: "a a b";
+            margin: auto;
+            gap: 8%;
+            margin-top: 6%;
+            padding:  5%;
+        }
+
+        #cont1 {
+            display: grid;
+            width: 100vw;
+            grid-template: "a b b";
+            margin: auto;
+            gap: 8%;
+            margin-top: 6%;
+            background-color:rgb(239, 243, 245);
+            padding: 5%;
+        }
+
+      
+        #cont2 {
+            display: grid;
+            width: 100vw;
+            grid-template: "a a b";
+            margin: auto;
+            gap: 8%;
+            margin-top: 6%;
+            margin-bottom: 3%;
+            padding: 5%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-top: -10px;
+        }
+
+        h6 {
+            color: grey;
+            font-size: 23px;
+            font-weight: normal;
+            margin-left: .1%;
+            margin-top: -10px;
+        }
+
+        p {
+            line-height: 24px;
+            margin-top: -15px;
+        }
+        
+
+        button {
+            width: 180px;
+            height: 50px;
+            border-radius: 30px;
+            margin-top: 6%;
+            color: blueviolet;
+            border: 2px solid blueviolet;
+            background-color: white;
+        }
+
+        h5 {
+            font-size: 16px;
+            margin-top: 10px;
+            color: grey;
+        }
+
+
+
+        #bottom {
+            width: 100vw;
+            background-color:  rgb(239, 243, 245);
+            padding-top: 6%;
+            margin: auto;
+        }
+
+        #bottom > h5, h1, h3 {
+            text-align: center;
+            margin: .3%;
+        }
+
+        #bottom >.box1 {
+            display: grid;
+            gap: 2%;
+            grid-template: "a b c";
+            width: 100%;
+            height: 300px;
+            margin-top: 10%;
+        }
+        .box1 > div {
+            width: 65%;
+            height: 300px;
+            margin: auto;
+        }
+        .box1 > div > div:nth-of-type(1) {
+            width: 100%;
+            height: 35%;
+            
+        }
+        .box1 > div > div:nth-of-type(2) {
+            width: 100%;
+            height: 58%;
+            text-align: center;
+        }
+        .box1 > div > div:nth-of-type(2) >  p {
+            font-size: 17px;
+            margin-top: 10px;
+        }
+        .box1 > div > div:nth-of-type(2) > h3 {
+            color: black;
+            margin-top: 2%;
+            font-weight: bold;
+        }
+
+
+
+        #bottom >.box2 {
+            display: grid;
+            gap: 2%;
+            grid-template: "a b c";
+            width: 100%;
+            height: 300px;
+            margin-top: 3%;
+        }
+        .box2 > div {
+            width: 65%;
+            height: 300px;
+            margin: auto;
+        }
+        .box2 > div > div:nth-of-type(1) {
+            width: 100%;
+            height: 35%;
+            
+        }
+        .box2 > div > div:nth-of-type(2) {
+            width: 100%;
+            height: 58%;
+            text-align: center;
+        }
+        .box2 > div > div:nth-of-type(2) >  p {
+            font-size: 17px;
+            margin-top: 10px;
+        }
+        .box2 > div > div:nth-of-type(2) > h3 {
+            color: black;
+            margin-top: 2%;
+            font-weight: bold;
+        }
+
+        #bottom > h5, h3, p {
+            padding-top: 10px;
+        }
+
+        #bottom > h1 {
+            font-size: 47px;
+        }
+
+        #bottom > h3 {
+            font-size: 30px;
+        }
+
+        #bottom > h5, h3, p {
+            color: grey;
+        }
+
+        #bottom >  button {
+            width: 180px;
+            height: 50px;
+            border-radius: 30px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            color: blueviolet;
+            border: 2px solid blueviolet;
+            margin-left: 45%;
+        }
+
+
+
+       
+        @media only screen and (max-width: 990px) {
+            h1 {
+                width: 90%;
+            }
+            #cont {
+                width: 90%;
+                height: auto;
+                grid-template: "a" "b";
+                margin-bottom: 20%;
+            }
+            #cont1 {
+                width: 90%;
+                height: auto;
+                grid-template: "b" "a";
+                margin-bottom: 20%;
+            }
+            #cont1 > div:nth-of-type(2) {
+                margin-bottom: 10%;
+            }
+            #cont2 {
+                width: 90%;
+                height: auto;
+                grid-template: "a" "b";
+                margin-bottom: 20%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            button {
+                margin: auto;
+                margin-bottom: 8%;
+                width: 360px;
+            }
+            #bottom >.box1 {
+                width: 90%;
+                height: auto;
+                grid-template: "a b c";
+            }
+            #bottom >.box2 {
+                width: 90%;
+                height: auto;
+                grid-template: "a b c";
+            }
+            #bottom > button {
+               margin-left: 35%;
+               width: 360px;
+               
+ 
+            } 
+        }  
+
+
+       
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                width: 90%;
+            }
+            #cont {
+                width: 90%;
+                height: auto;
+                grid-template: "a" "b";
+                margin-bottom: 20%;
+            }
+            #cont1 {
+                width: 90%;
+                height: auto;
+                grid-template: "b" "a";
+                margin-bottom: 20%;
+            }
+            #cont1 > div:nth-of-type(2) {
+                margin-bottom: 10%;
+            }
+            #cont2 {
+                width: 90%;
+                height: auto;
+                grid-template: "a" "b";
+                margin-bottom: 20%;
+            }
+            button {
+                margin: auto;
+                margin-bottom: 8%;
+                width: 360px;
+            }
+            #bottom >.box1 {
+                width: 90%;
+                height: auto;
+                grid-template: "a" "b" "c";
+            }
+            #bottom >.box2 {
+                width: 90%;
+                height: auto;
+                grid-template: "a" "b" "c";
+            }
+            #bottom > button {
+               margin-left: 15%;
+               width: 360px;
+            } 
+        }  
+
+
+
+
+       
+  
+
+    </style>
+</head>
+<body>
+    <h1> Read NVIDIA's spotlight on Fathom: The Cure for the Common Code</h1>
+    <div id="cont">
+        <div>
+            <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8a616cf99d7caf1875c8a0_automation.svg" alt="Fathom"/>
+        </div>
+        <div>
+            <h5>AI-DRIVEN EFFICIENCY</h5>
+            <h2>Coding automation</h2>
+            <h6>Let us take a first pass</h6>
+            <p>Use our AI to ease the burden on your coding team.
+                 <br> In one quick step, we can review your incoming <br>
+                  charts, process the charts that can be coded by our <br>
+                   system and then pass the remainder to your current <br>
+                    coding operation, allowing them to focus on the most <br>
+                     critical charts while drastically reducing your overall <br>
+                      coding costs.</p>
+            <button>REQUEST A CALL</button>
+        </div>
+    </div>
+
+
+    <div id="cont1">
+        <div>
+            <h5>100% COVERAGE</h5>
+            <h2>Full-service coding</h2>
+            <h6>Automation augmented by <br> world-class medical coders.</h6>
+            <p>A turn-key solution that combines our AI system with
+                 <br> world class medical coders to handle all your coding <br>
+                 needs, resulting in up to a 70% reduction in coding <br>
+                 costs while increasing speed, accurracy, and security. </p>
+            <button>REQUEST A CALL</button>
+        </div>
+        <div>
+            <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8a617bacdbb51df33f6af8_full-service.svg" alt="Fathom"/>
+        </div>
+    </div>
+
+
+
+    <div id="cont2">
+        <div>
+            <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8a6195a6b2c14cbeaa56fb_audit.svg" alt="Fathom"/>
+        </div>
+        <div>
+            <h5>MITIGATE RISK</h5>
+            <h2>Audit complete</h2>
+            <h6>The world’s first <br> comprehensive, real-time <br> coding audit</h6>
+            <p>Use AI to check your coder or coding vendor’s work to
+                 <br> ensure completion and accuracy. Our system looks at <br>
+                 every coded chart and flags any that may represent a <br>
+                 potential denial or unnecessary downcoding. <br>
+            </p>
+            <button>REQUEST A CALL</button>
+        </div>
+    </div>
+
+
+    <div id="bottom">
+        <h5>BENEFITS</h5>
+        <h1>Faster, cheaper, and more accurate</h1>
+        <h3>Supercharge your medical coding operations</h3>
+
+        <div class="box1">
+        <div>
+            <div><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e81210fd802d6d4d78cc141_cost.svg" alt="Fathom"></div>
+            <div>
+                <h3>Cost</h3>
+                <p>Reduce the total cost of your coding <br> operations by up to 70%.</p>
+            </div>
+        </div>
+        <div>
+         <div><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e81244ea7eca1517f971f83_scale.svg" alt="Fathom"></div>
+          <div>
+             <h3>Scale</h3>
+             <p>Effortlessly add the capacity to code <br> millions of charts per day.</p>
+         </div>
+         </div>
+         <div>
+         <div><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e811b57a7eca1abcc96f85e_speed.svg" alt="Fathom"></div>
+         <div>
+            <h3>Speed</h3>
+            <p>Cut your coding turnaround by days, <br> not hours or minutes.</p>
+        </div>
+        </div>
+        </div>
+
+ 
+        <div class="box2">
+            <div>
+             <div><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e81244e957e0aca8631fe64_reliability.svg" alt="Fathom"></div>
+             <div>
+                <h3>Reliability</h3>
+                <p>Ensure that your coding operations <br> never slow down or stop.</p>
+            </div>
+            </div>
+
+            <div>
+             <div><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e81250b9d7551effbcd8483_accuracy.svg" alt="Fathom"></div>
+             <div>
+                <h3>Accuracy</h3>
+                <p>Instantly reduce claim denials and <br> mitigate audit risk.</p>
+            </div>
+            </div>
+
+            <div>
+             <div><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e81235429502fec7abc4315_security.svg" alt="Fathom"></div>
+             <div>
+                <h3>Security</h3>
+                <p>Keep your PHI secure with industry <br> leading technology and protocol.</p>
+            </div>
+            </div>
+        </div>
+
+        <button>REQUEST A CALL</button>
+ </div>
+
+
+</body>
+</html>
