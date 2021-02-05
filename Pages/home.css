@@ -104,6 +104,7 @@
                 width: 100%;
                 height: auto;
                 padding: 96px 0px;
+    
             }
             #hero .container h1 {
                 font-size: 68px;
@@ -111,7 +112,6 @@
                 color: #fff;
                 font-weight: 500;
                 margin-bottom: 40px;
-                
                 /* text-align: center; */
                 
             }
@@ -125,7 +125,7 @@
                 margin-left: auto;
                 padding-left: 24px;
                 padding-right: 24px;
-                
+               
 
             }
 
@@ -143,9 +143,9 @@
             .dots {
 
                 z-index: 1000;
-                position: relative;
+                position: absolute;
                 display: block;
-                top: 420px;
+                top: 70%;
                 width: 15%;
                 padding-left: 10px;
                 padding-right: auto;
@@ -154,6 +154,14 @@
                 background-position: center;
                 background-repeat: repeat-y;
                 background-size: 140px;
+            }
+
+            #hero-btn button{
+                background-color: white;
+                border-color: white;
+                color:#9a76d0;
+                width: 77%;
+                margin-top: -40px;
             }
 
 /* hero ends */
@@ -165,7 +173,7 @@
             margin: auto;
             line-height: 16px;
             grid-template: "div";
-            margin-top: 10px;
+            margin-top:10px;
         }
 
         .center {
@@ -794,3 +802,83 @@
                 margin: 0px;
             }
         }
+
+        /* MEdium for Hero Button */
+        @media only screen and (max-width: 1394px) {
+           #hero-btn{
+               width: 20%;
+           }
+            #hero-btn button{
+                width: 77%;
+            }
+        } 
+
+           @media only screen and (max-width: 1024px) {
+           #hero-btn{
+               width: 30%;
+           }
+            #hero-btn button{
+                width: 77%;
+            }
+        } 
+
+            @media only screen and (max-width: 712px) {
+           #hero-btn{
+               width: 50%;
+           }
+            #hero-btn button{
+                width: 77%;
+            }
+        }
+
+           @media only screen and (max-width: 602px) {
+           #hero-btn{
+               width: 80%;
+           }
+            #hero-btn button{
+                width: 77%;
+            }
+        }
+
+         /*Medium for numbers-cont  */
+          @media only screen and (max-width: 1200px){
+              #numbers-cont {
+                width: 100%;
+            }
+
+            #numbers-grid-cont {
+                grid-template: "heading"
+                    "num1"
+                    "num2"
+                    "num3";
+                width: 100%;
+                gap: 3%;
+            }
+          }
+
+          /* Medium for services cont */
+        @media only screen and (max-width: 865px){
+               #services-cont {
+                grid-template: "item0"
+                    "item1"
+                    "item2"
+                    "item3";
+                width: 70%;
+                gap: 2.9%;
+            }
+
+             .button-cont {
+                width: 60%;
+                margin-top: 15%;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+         @media only screen and (max-width: 560px){
+              .button-cont {
+                width: 70%;
+                margin-top: 20%;
+            }
+         }
