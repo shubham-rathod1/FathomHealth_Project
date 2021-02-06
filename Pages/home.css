@@ -147,6 +147,7 @@
                 } */
                 #check:checked ~ ul{
                     top: 0;
+                    
                 }
             }
             section{
